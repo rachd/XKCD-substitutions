@@ -1,0 +1,7 @@
+{
+  "manifest_version": 2,
+
+  "name": "Substitutions",
+  "description": "This extension substitutes words on your page based on the XKCD comic",
+  "version": "1.0",
+}
