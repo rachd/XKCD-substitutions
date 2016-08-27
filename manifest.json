@@ -5,12 +5,13 @@
 	  "permissions": [
 	    "activeTab"
 	  ],
-	  "background": {
-	    "scripts": ["substitute.js"],
-	    "persistent": false
-	  },
-	  "browser_action": {
-	    "default_title": "Make this page red"
-	  },
+	  "content_scripts": 
+		[
+			{
+				"matches": ["*://*/*"],
+				"js": ["substitute.js"],
+				"run_at": "document_end"
+			}
+		],
 	  "manifest_version": 2
 }
